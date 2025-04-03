@@ -12,14 +12,9 @@ namespace Workers.Console.Repo
     {
         private readonly DatabaseContext _context = new();
 
-        public List<Employee> GetAll()
-        {
-            return _context.Workers.ToList();
-        }
-
         public int GetNumberOfEmployees()
         {
-            return _context.Workers.Count();
+            return _context.Manyworkers.Count();
         }
         public int GetEmployeeCount()
         {
