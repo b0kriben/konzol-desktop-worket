@@ -16,5 +16,34 @@ namespace Workers.Console.Repo
         {
             return _context.Workers.Count();
         }
+        public int GetEmployeeCount()
+        {
+            return _context.Manyworkers.Count();
+        }
+
+        public int GetPaidEmployeeCount()
+        {
+            return _context.Manyworkers.Count(e => e.Salary > 0);
+        }
+
+        public int GetUnpaidEmployeeCount()
+        {
+            return GetEmployeeCount() - GetPaidEmployeeCount();
+        }
+
+        public string GetHighestSalaryEmployee()
+        {
+            return _context.Manyworkers.OrderByDescending(e => e.Salary).FirstOrDefault();
+        }
+
+        public Employee GetLowestSalaryEmployee()
+        {
+            return _context.Manyworkers.OrderBy(e => e.Salary).FirstOrDefault();
+        }
+
+        public decimal GetAverageSalary()
+        {
+            return _context.Manyworkers.Average(e => e.Salary);
+        }
     }
 }

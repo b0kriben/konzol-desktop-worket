@@ -9,7 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Database\" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Workers.Console\Workers.Console\Workers.Console.csproj" />
   </ItemGroup>
 
 </Project>
