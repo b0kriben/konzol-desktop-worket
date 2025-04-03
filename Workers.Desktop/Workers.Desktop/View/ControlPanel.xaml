@@ -6,7 +6,38 @@
              xmlns:local="clr-namespace:Workers.Desktop.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+    <StackPanel>
+        <Label Content="Vezérlőpult"/>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Az összes dolgozó száma"/>
+            <Label Content="{Binding NumberOfEmployees}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Fizetést kapó dolgozók száma"/>
+            <Label Content="{Binding NumberOfPaidEmployees}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Fizetés nélküli dolgozók száma"/>
+            <Label Content="{Binding NumberOfUnpaidEmployees}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Content="A legnagyobb fizetést kapó dolgozó neve"/>
+            <Label Content="{Binding HighestSalaryEmployee}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Content="A legkisebb fizetést kapó dolgozó neve"/>
+            <Label Content="{Binding LowestSalaryEmployee}"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Átlagkereset"/>
+            <Label Content="{Binding AverageSalary}"/>
+        </StackPanel>
+    </StackPanel>
+
 </UserControl>

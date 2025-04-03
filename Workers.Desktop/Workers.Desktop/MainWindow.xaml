@@ -12,6 +12,6 @@
     </Window.DataContext>
     <StackPanel>
         <view:ControlPanelView DataContext="{Binding ControlPanelViewModel}"/>
-        <view:ScholarshipApplicationManagementView DataContext="{Binding ScholarshipApplicantManagmentViewModel}"/>
+        <view:EmployeeManagmentViewModel DataContext="{Binding EmployeeManagmentViewModel}"/>
     </StackPanel>
 </Window>

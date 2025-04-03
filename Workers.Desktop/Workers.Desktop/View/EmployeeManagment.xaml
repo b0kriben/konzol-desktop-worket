@@ -6,7 +6,13 @@
              xmlns:local="clr-namespace:Workers.Desktop.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+    <StackPanel>
+        <Label Content="EmployeeManagment"/>
+
+        <TextBox x:Name="EmailSearchBox" PlaceholderText="Email cím keresése..."/>
+        <Button Content="Fizetést kapó dolgozó keresése" Command="{Binding FindEmployeeWithSalaryCommand}" />
+        <Label Content="{Binding SearchResult}" />
+
+        <Button Content="Fizetés nélküli dolgozó törlésére" Command="{Binding DeleteEmployeeWithoutSalaryCommand}" />
+    </StackPanel>
 </UserControl>
