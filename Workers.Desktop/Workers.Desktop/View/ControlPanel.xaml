@@ -10,32 +10,32 @@
         <Label Content="Vezérlőpult"/>
 
         <StackPanel Orientation="Horizontal">
-            <Label Content="Az összes dolgozó száma"/>
+            <Label Content="Az összes dolgozó száma: "/>
             <Label Content="{Binding NumberOfEmployees}"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal">
-            <Label Content="Fizetést kapó dolgozók száma"/>
+            <Label Content="Fizetést kapó dolgozók száma: "/>
             <Label Content="{Binding NumberOfPaidEmployees}"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal">
-            <Label Content="Fizetés nélküli dolgozók száma"/>
+            <Label Content="Fizetés nélküli dolgozók száma: "/>
             <Label Content="{Binding NumberOfUnpaidEmployees}"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal">
-            <Label Content="A legnagyobb fizetést kapó dolgozó neve"/>
+            <Label Content="A legnagyobb fizetést kapó dolgozó neve: "/>
             <Label Content="{Binding HighestSalaryEmployee}"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal">
-            <Label Content="A legkisebb fizetést kapó dolgozó neve"/>
+            <Label Content="A legkisebb fizetést kapó dolgozó neve: "/>
             <Label Content="{Binding LowestSalaryEmployee}"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal">
-            <Label Content="Átlagkereset"/>
+            <Label Content="Átlagkereset: "/>
             <Label Content="{Binding AverageSalary}"/>
         </StackPanel>
     </StackPanel>
