@@ -16,6 +16,7 @@ Console.WriteLine("2. feladat");
 Employee janos = new Employee("janos@ceg.hu", "Dolgozó János");
 Console.WriteLine(janos);
 
+
 Console.WriteLine("3. feladat");
 try
 {
